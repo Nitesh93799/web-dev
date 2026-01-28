@@ -1,0 +1,22 @@
+
+    h1{
+    color: rgb(152, 20, 20);
+    }
+    
+    a{
+        color: rgb(226, 162, 43);
+    }
+    span {
+        font-style:italic;
+        font-size: large;
+        color: rgba(162, 166, 196, 0.774);
+    }
+    p span{
+        font-style:italic;
+        font-size: large;
+        font-weight: bold;
+        color:burlywood
+    }
+    .text brown{
+        color:blanchedalmond;
+    }
