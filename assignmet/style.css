@@ -1,0 +1,48 @@
+/* Change color of the main heading */
+h1.text.bold {
+    color: darkred;      /* Change to any color you like */
+    font-family: Arial, sans-serif;
+}
+
+/* Change color of all links in nav */
+header nav a {
+    color: darkblue;     /* Navigation link color */
+    text-decoration: none; 
+}
+
+header nav a:hover {
+    color: dodgerblue;   /* Hover color */
+}
+
+/* Change color of links inside the content area */
+.content a {
+    color: darkorange;   /* Links like E-commerce, Media & Entertainment */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: red;          /* Hover color */
+}
+
+/* Paragraph text */
+.content p {
+    color: #333;         /* Dark gray for readability */
+    line-height: 1.6;
+}
+
+/* Spans inside paragraphs (if any) */
+.content p span {
+    color: burlywood;    /* Italic and bold spans */
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Optional: styling for body background */
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
