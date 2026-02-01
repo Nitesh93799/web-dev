@@ -1,0 +1,31 @@
+h1 {
+    font-weight: bold;
+    color: rgb(146, 79, 79);
+    margin-bottom: 48px;
+}
+.intro-text {
+    font-size: 16px;
+}
+.card {
+    width: 40%;
+    border: 12px solid gray;
+    margin-top: 20px;
+}
+
+.card img {
+    width: 50%;
+    display: block;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 12px;
+}
