@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 400px;
+  width: 600px;
+  background-color: rgb(127, 118, 120);
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 300px;
+  height: 300px;
+}
+
+.container h2 {
+  position: absolute;
+  top: 10px;
+  color: rgb(172, 155, 155);
+  background: rgba(53, 48, 48, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
