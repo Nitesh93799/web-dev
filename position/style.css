@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:gray ;
+  height: 400vh;
+}
+
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  position: fixed;
+}
+
+
+.top-left {
+  top: 0;
+  left: 0;
+  background: blue;
+}
+
+
+.top-right {
+  top: 0;
+  right: 0;
+  background: pink;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  background: yellow;
+}
+
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  background: green;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:red;
+}
