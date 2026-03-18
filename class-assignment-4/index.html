@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="video-container">
+    <video id="myVideo" src="assignment.mp4" type="video/mp4"></video>
+
+    <div class="play-button" id="playButton">
+        <svg width="60" height="60" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.5)" />
+            <polygon points="40,30 70,50 40,70" fill="white"/>
+        </svg>
+    </div>
+</div>
+<script>
+let video = document.getElementById("myVideo");
+let playButton = document.getElementById("playButton");
+
+playButton.onclick = () => {
+    video.play();
+};
+</script>
+</body>
+</html>
