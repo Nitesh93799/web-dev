@@ -1,0 +1,108 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #00bfff;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    display: none;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+}
+
+
+.hero {
+    background: #555;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.members ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.members li {
+    background: #ddd;
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#OddEvenGame {
+    text-align: center;
+}
+
+#OddEvenGame input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+#OddEvenGame button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#OddEvenGame button:hover {
+    background: #218838;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

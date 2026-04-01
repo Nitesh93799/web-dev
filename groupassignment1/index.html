@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Group Project</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Group Project</h1>
+    <nav>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('OddEvenGame')">Game</a>
+        <a onclick="showPage('contact')">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="active">
+    <div class="hero">
+        <h2>Welcome</h2>
+        <p>This is our group project website.</p>
+    </div>
+
+    <div class="members">
+        <h2>Group Members</h2>
+        <ul>
+            <li>Nitesh</li>
+            <li>Ashim</li>
+            <li>Abiral</li>
+        </ul>
+    </div>
+</section>
+
+<section id="OddEvenGame">
+    <h2>Mini Game: Odd or Even </h2>
+    <p>Enter a number to check if it's Odd or Even</p>
+
+    <input type="number" id="numberInput" placeholder="Enter number">
+    <button onclick="checkOddEven()">Check</button>
+
+    <p id="result"></p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Nitesh, Ashim, Abiral</p>
+</footer>
+
+<script>
+
+function showPage(pageId) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(section => section.classList.remove("active"));
+
+    document.getElementById(pageId).classList.add("active");
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if(name === "" || email === "") {
+        alert("Please fill all fields");
+        e.preventDefault();
+    }
+
+}
+)
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+
+function checkOddEven() {
+    let number = parseInt(document.getElementById("numberInput").value);
+    let result = document.getElementById("result");
+
+    if (isNaN(number)) {
+        result.innerText = "Please enter a valid number!";
+        return;
+    }
+
+    if (number % 2 === 0) {
+        result.innerText = number + " is EVEN";
+    } else {
+        result.innerText = number + " is ODD";
+    }
+}
+
+</script>
+
+</body>
+</html>
