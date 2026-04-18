@@ -1,16 +1,15 @@
-// ===== Page navigation =====
+
 function showPage(pageId) {
     const sections = document.querySelectorAll("section");
     sections.forEach(sec => sec.classList.remove("active"));
     document.getElementById(pageId).classList.add("active");
 
-    // Start game automatically when Game page is opened
+
     if (pageId === "game") {
         startGame();
     }
 }
 
-// ===== Game logic =====
 const gameArea = document.getElementById("gameArea");
 const player = document.getElementById("player");
 const scoreDisplay = document.getElementById("score");
