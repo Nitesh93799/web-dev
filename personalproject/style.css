@@ -346,13 +346,13 @@ body{
     color: white;
 }
 body.light{
-    background: white;
+    background: gray;
     color: black;
 }
 
 body.dark{
     background: #d46d6d;
-    color: white;
+    color: gray;
 }
 body.dark .about-box{
     color: #f1f1f1;
@@ -361,7 +361,7 @@ body.dark .about-box{
 
 body.light .about-box{
     color: #111;
-    background: white;
+    background: gray;
 }
 .resume-container{
     display: flex;
