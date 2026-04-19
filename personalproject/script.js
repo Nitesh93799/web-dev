@@ -22,7 +22,7 @@ function updateUserClock() {
 function updateTheme() {
     const hour = new Date().getHours();
 
-    if (hour >= 6 && hour < 18) {
+    if (hour >= 8 && hour < 18) {
         document.body.classList.add("light");
         document.body.classList.remove("dark");
     } else {
